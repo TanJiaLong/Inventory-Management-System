@@ -1,0 +1,274 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ims"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\android\app\src\debug\AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[:mobile_scanner] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\mobile_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-65
+16-->[:mobile_scanner] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\mobile_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-62
+17
+18    <uses-feature
+18-->[:mobile_scanner] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\mobile_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-13:36
+19        android:name="android.hardware.camera"
+19-->[:mobile_scanner] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\mobile_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-47
+20        android:required="false" />
+20-->[:mobile_scanner] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\mobile_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-33
+21
+22    <permission
+22-->[androidx.core:core:1.10.1] C:\Users\jialo\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+23        android:name="com.example.ims.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.10.1] C:\Users\jialo\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.10.1] C:\Users\jialo\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.example.ims.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+26-->[androidx.core:core:1.10.1] C:\Users\jialo\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.10.1] C:\Users\jialo\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+27    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+28-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+29
+30    <application
+31        android:name="android.app.Application"
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.10.1] C:\Users\jialo\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/ic_launcher"
+35        android:label="ims" >
+36        <activity
+37            android:name="com.example.ims.MainActivity"
+38            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+39            android:exported="true"
+40            android:hardwareAccelerated="true"
+41            android:launchMode="singleTop"
+42            android:theme="@style/LaunchTheme"
+43            android:windowSoftInputMode="adjustResize" >
+44
+45            <!--
+46                 Specifies an Android theme to apply to this Activity as soon as
+47                 the Android process has started. This theme is visible to the user
+48                 while the Flutter UI initializes. After that, this theme continues
+49                 to determine the Window background behind the Flutter UI.
+50            -->
+51            <meta-data
+52                android:name="io.flutter.embedding.android.NormalTheme"
+53                android:resource="@style/NormalTheme" />
+54
+55            <intent-filter>
+56                <action android:name="android.intent.action.MAIN" />
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+59            </intent-filter>
+60        </activity>
+61        <!--
+62             Don't delete the meta-data below.
+63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+64        -->
+65        <meta-data
+66            android:name="flutterEmbedding"
+67            android:value="2" />
+68
+69        <provider
+69-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+70            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+70-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+71            android:authorities="com.example.ims.flutter.image_provider"
+71-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+72            android:exported="false"
+72-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+73            android:grantUriPermissions="true" >
+73-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+74            <meta-data
+74-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+75                android:name="android.support.FILE_PROVIDER_PATHS"
+75-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+76                android:resource="@xml/flutter_image_picker_file_paths" />
+76-->[:image_picker_android] C:\Users\jialo\OneDrive\Documents\FlutterWorkSpace\Mobile Programming\ims\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+77        </provider>
+78
+79        <service
+79-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\jialo\.gradle\caches\transforms-3\83c4102496f9708cd0437d5552a8e8d5\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
+80            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+80-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\jialo\.gradle\caches\transforms-3\83c4102496f9708cd0437d5552a8e8d5\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
+81            android:directBootAware="true"
+81-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:17:13-43
+82            android:exported="false" >
+82-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\jialo\.gradle\caches\transforms-3\83c4102496f9708cd0437d5552a8e8d5\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
+83            <meta-data
+83-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\jialo\.gradle\caches\transforms-3\83c4102496f9708cd0437d5552a8e8d5\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
+84                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+84-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\jialo\.gradle\caches\transforms-3\83c4102496f9708cd0437d5552a8e8d5\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\jialo\.gradle\caches\transforms-3\83c4102496f9708cd0437d5552a8e8d5\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
+86            <meta-data
+86-->[com.google.mlkit:vision-common:17.3.0] C:\Users\jialo\.gradle\caches\transforms-3\24180f60c197c06bc3dc855bc6adcf16\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+87                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+87-->[com.google.mlkit:vision-common:17.3.0] C:\Users\jialo\.gradle\caches\transforms-3\24180f60c197c06bc3dc855bc6adcf16\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.mlkit:vision-common:17.3.0] C:\Users\jialo\.gradle\caches\transforms-3\24180f60c197c06bc3dc855bc6adcf16\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+89            <meta-data
+89-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:20:13-22:85
+90                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+90-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:21:17-120
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:22:17-82
+92        </service>
+93
+94        <provider
+94-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:9:9-13:38
+95            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+95-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:10:13-78
+96            android:authorities="com.example.ims.mlkitinitprovider"
+96-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:11:13-69
+97            android:exported="false"
+97-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:12:13-37
+98            android:initOrder="99" />
+98-->[com.google.mlkit:common:18.9.0] C:\Users\jialo\.gradle\caches\transforms-3\d2bf520ec7af2a2f792230991e589fe4\transformed\jetified-common-18.9.0\AndroidManifest.xml:13:13-35
+99
+100        <activity
+100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\24bd5ae211488322aa8c48f41a7bee4d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+101-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\24bd5ae211488322aa8c48f41a7bee4d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+102            android:exported="false"
+102-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\24bd5ae211488322aa8c48f41a7bee4d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+103-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\24bd5ae211488322aa8c48f41a7bee4d\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+104
+105        <meta-data
+105-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+106            android:name="com.google.android.gms.version"
+106-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+107            android:value="@integer/google_play_services_version" />
+107-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\jialo\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+108        <!--
+109        Service for holding metadata. Cannot be instantiated.
+110        Metadata will be merged from other manifests.
+111        -->
+112        <service
+112-->[androidx.camera:camera-core:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\b80c8d3c0de71c96f3c518cb9d949c89\transformed\jetified-camera-core-1.3.1\AndroidManifest.xml:29:9-33:78
+113            android:name="androidx.camera.core.impl.MetadataHolderService"
+113-->[androidx.camera:camera-core:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\b80c8d3c0de71c96f3c518cb9d949c89\transformed\jetified-camera-core-1.3.1\AndroidManifest.xml:30:13-75
+114            android:enabled="false"
+114-->[androidx.camera:camera-core:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\b80c8d3c0de71c96f3c518cb9d949c89\transformed\jetified-camera-core-1.3.1\AndroidManifest.xml:31:13-36
+115            android:exported="false" >
+115-->[androidx.camera:camera-core:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\b80c8d3c0de71c96f3c518cb9d949c89\transformed\jetified-camera-core-1.3.1\AndroidManifest.xml:32:13-37
+116            <meta-data
+116-->[androidx.camera:camera-camera2:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\1313536b01759499bb81a1fdfc0c5f3e\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+117                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+117-->[androidx.camera:camera-camera2:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\1313536b01759499bb81a1fdfc0c5f3e\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+118                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+118-->[androidx.camera:camera-camera2:1.3.1] C:\Users\jialo\.gradle\caches\transforms-3\1313536b01759499bb81a1fdfc0c5f3e\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+119        </service>
+120
+121        <uses-library
+121-->[androidx.window:window:1.0.0-beta04] C:\Users\jialo\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+122            android:name="androidx.window.extensions"
+122-->[androidx.window:window:1.0.0-beta04] C:\Users\jialo\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+123            android:required="false" />
+123-->[androidx.window:window:1.0.0-beta04] C:\Users\jialo\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+124        <uses-library
+124-->[androidx.window:window:1.0.0-beta04] C:\Users\jialo\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+125            android:name="androidx.window.sidecar"
+125-->[androidx.window:window:1.0.0-beta04] C:\Users\jialo\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+126            android:required="false" />
+126-->[androidx.window:window:1.0.0-beta04] C:\Users\jialo\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+127
+128        <provider
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+129            android:name="androidx.startup.InitializationProvider"
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+130            android:authorities="com.example.ims.androidx-startup"
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+131            android:exported="false" >
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+132            <meta-data
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+134                android:value="androidx.startup" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+135        </provider>
+136
+137        <receiver
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+138            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+139            android:directBootAware="false"
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+140            android:enabled="true"
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+141            android:exported="true"
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+142            android:permission="android.permission.DUMP" >
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+144                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+147                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+150                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+153                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jialo\.gradle\caches\transforms-3\36aadc6eb473a87ded89a16c724c2dd8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+154            </intent-filter>
+155        </receiver>
+156
+157        <service
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+158            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+158-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+159            android:exported="false" >
+159-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+160            <meta-data
+160-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+161                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+161-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+162                android:value="cct" />
+162-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jialo\.gradle\caches\transforms-3\77fc00fa8854065971ae598341752227\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+163        </service>
+164        <service
+164-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+165            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+165-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+166            android:exported="false"
+166-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+167            android:permission="android.permission.BIND_JOB_SERVICE" >
+167-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+168        </service>
+169
+170        <receiver
+170-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+171            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+171-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+172            android:exported="false" />
+172-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\jialo\.gradle\caches\transforms-3\ab87f05ef844f54acdeeba0563ec57da\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+173    </application>
+174
+175</manifest>

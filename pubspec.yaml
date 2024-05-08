@@ -1,0 +1,38 @@
+name: ims
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  cached_network_image: ^3.2.3
+  dotted_border: ^2.1.0
+  flutter:
+    sdk: flutter
+  fluttertoast: ^8.2.5
+  http: ^0.13.6
+  image_picker: ^1.0.4
+  intl: ^0.17.0
+  mobile_scanner: ^3.5.7
+  permission_handler: ^11.0.1
+  qr_flutter: ^4.1.0
+  syncfusion_flutter_charts: 20.1.55
+  syncfusion_flutter_core: 20.1.55
+  date_picker_plus: ^3.0.2
+  flutter_expandable_fab: ^2.0.0
+  shared_preferences: ^2.2.2
+  qr_scanner_overlay: ^0.0.2
+  badges: ^3.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
